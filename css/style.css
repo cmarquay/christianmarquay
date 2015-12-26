@@ -3,36 +3,217 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: "socicon";
+    src: url("../font/socicon-webfont.eot");
+    src: url("../font/socicon-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../font/socicon-webfont.woff") format("woff"),
+    url("../font/socicon-webfont.ttf") format("truetype"),
+    url("../font/socicon-webfont.svg#sociconregular") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
-    background-color: #00B0E0;
     font-family: sans-serif;
 }
 
-header h1 {
-    left: 25px;
-    position: absolute;
-    top: 25px;
-    width: 50%;
+/**************/
+/*   HEADER   */
+/**************/
+
+.home header {
+    background-color: #00B0E0;
+    height: 150px;
 }
 
-header h1 span {
+.site header {
     background-color: #191970;
+    height: 300px;
+}
+
+header h1 {
+    float: left;
+    left: 25px;
+    height: 150px;
+    position: relative;
+    top: 25px;
+    width: 75%;
+}
+
+header span {
     border-radius: 2px;
-    color: #00B0E0;
     font-family: Calibri Light, sans-serif;
 }
 
-header h1 a {
+.home header span {
+    background-color: #191970;
+    color: #00B0E0;
+}
+
+.site header span {
+    background-color: #FFFFFF;
     color: #191970;
+}
+
+header a {
     font-size: 25px;
     text-decoration: none;
 }
 
-header h1 a:hover {
-    color: #7FFFD4;
+.home header a {
+    color: #191970;
 }
 
-header h1 a:hover span {
+.site header a {
+    color: #FFFFFF;
+}
+
+header h1 a {
+    font-size: 25px;
+}
+
+.home header h1 a:hover {
+      color: #7FFFD4;
+}
+
+.site header h1 a:hover {
+    color: #00B0E0;
+}
+
+.home header h1 a:hover span {
     background-color: #7FFFD4;
     color: #00B0E0;
+}
+
+.site header h1 a:hover span {
+    background-color: #00B0E0;
+}
+
+header nav {
+    float: left;
+    height: 150px;
+    width: 25%;
+}
+
+header nav>ul>li {
+    display: inline-block;
+}
+
+header nav>ul li a {
+    font-weight: bold;
+    font-size: 15px;
+    list-style: none;
+    position: relative;
+    top: 40px;
+}
+
+header nav>ul li a::after {
+    bottom: -5px;
+    content: "";
+    display: block;
+    height: 3px;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    position: absolute;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    width: 0;
+}
+
+.home header nav>ul li a::after {
+    background-color: #191970;
+}
+
+.site header nav>ul li a::after {
+    background-color: #FFFFFF;
+}
+
+header nav>ul li a:hover::after {
+    width: 100%;
+}
+
+header h2 {
+    clear: both;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/***************/
+/*   SECTION   */
+/***************/
+
+section {
+    float: left;
+}
+
+section:first-child {
+    width: 60%;
+}
+
+section:first-child h3+p {
+    float: left;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;
+    width: 30%;
+}
+
+section h3 {
+    color: #00B0E0;
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+/************/
+/*   FORM   */
+/************/
+
+.form form {
+    float: left;
+    font-size: 15px;
+    width: 60%;
+}
+
+.form form input, .form form textarea {
+    margin-bottom: 20px;
+    width: 500px;
+}
+
+.form form textarea {
+    height: 150px;
+}
+
+.form+section p {
+    background-color: #00B0E0;
+    border-radius: 100%;
+    display: inline-block;
+    height: 50px;
+    margin-right: 10px;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    position: relative;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    width: 50px;
+}
+
+.form+section p a {
+    color: #FFFFFF;
+    font-family: "socicon", sans-serif;
+    font-size: 30px;
+    left: 10px;
+    position: absolute;
+    text-decoration: none;
+    top: 10px;
+}
+
+.form+section p:hover {
+    -moz-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
 }
