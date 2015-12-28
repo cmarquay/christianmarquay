@@ -147,11 +147,11 @@ section {
     float: left;
 }
 
-section:first-child {
+.form {
     width: 60%;
 }
 
-section:first-child h3+p {
+.form h3+p {
     float: left;
     margin-left: 25px;
     margin-right: 25px;
@@ -179,7 +179,7 @@ section h3 {
 
 .form form input, .form form textarea {
     margin-bottom: 20px;
-    width: 500px;
+    width: 250px;
 }
 
 .form form textarea {
@@ -189,7 +189,7 @@ section h3 {
 .form+section p {
     background-color: #00B0E0;
     border-radius: 100%;
-    display: inline-block;
+    float: left;
     height: 50px;
     margin-right: 10px;
     -moz-transition: 0.2s;
@@ -216,4 +216,14 @@ section h3 {
     -o-transform: scale(1.2,1.2);
     transform: scale(1.2,1.2);
     -webkit-transform: scale(1.2,1.2);
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 960px)  {
+    .form form input, .form form textarea {
+        min-width: 350px;
+    }
 }
