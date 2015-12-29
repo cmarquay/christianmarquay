@@ -145,25 +145,13 @@ header h2 {
 
 section {
     float: left;
-}
-
-.form {
-    width: 60%;
-}
-
-.form h3+p {
-    float: left;
     margin-left: 25px;
-    margin-right: 25px;
-    text-align: justify;
-    width: 30%;
 }
 
 section h3 {
     color: #00B0E0;
     font-size: 25px;
     margin-bottom: 50px;
-    margin-left: 25px;
     margin-top: 25px;
 }
 
@@ -171,15 +159,22 @@ section h3 {
 /*   FORM   */
 /************/
 
+.form h3+p {
+    float: left;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    width: 90%;
+}
+
 .form form {
     float: left;
     font-size: 15px;
-    width: 60%;
+    width: 100%;
 }
 
 .form form input, .form form textarea {
     margin-bottom: 20px;
-    width: 250px;
+    width: 90%;
 }
 
 .form form textarea {
@@ -191,6 +186,7 @@ section h3 {
     border-radius: 100%;
     float: left;
     height: 50px;
+    margin-bottom: 10px;
     margin-right: 10px;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
@@ -218,12 +214,32 @@ section h3 {
     -webkit-transform: scale(1.2,1.2);
 }
 
-@media screen and (min-width: 480px) {
 
+
+@media screen and (min-width: 480px) {
+    /************/
+    /*   FORM   */
+    /************/
+
+    .form h3+p {
+        width: 33%;
+    }
+
+    .form form {
+        width: 60%;
+    }
 }
 
-@media screen and (min-width: 960px)  {
-    .form form input, .form form textarea {
-        min-width: 350px;
+@media screen and (min-width: 750px)  {
+    /************/
+    /*   FORM   */
+    /************/
+
+    .form {
+        width: 60%;
+    }
+
+    .form+section {
+        width: 33%;
     }
 }
