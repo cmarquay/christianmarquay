@@ -27,6 +27,7 @@
     <main>
 
     </main>
+    <?php include_once("footer.php"); ?>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js" type="text/javascript"></script>
         <script src="js/comportement.min.js" type="text/javascript"></script>
     </body>

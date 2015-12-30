@@ -32,7 +32,7 @@
             echo "</script>";
         }
     }
-    require "header.php";
+    include_once("header.php");
 ?>
     <main>
         <section class="form">
@@ -62,5 +62,6 @@
             <p><a href="https://github.com/cmarquay" target="_blank">Q</a></p>
         </section>
     </main>
+    <?php include_once("footer.php"); ?>
     </body>
 </html>

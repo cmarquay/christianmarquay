@@ -143,9 +143,16 @@ header h2 {
 /*   SECTION   */
 /***************/
 
+.home main {
+    height: 500px;
+}
+
+main {
+    margin-left: 25px;
+}
+
 section {
     float: left;
-    margin-left: 25px;
 }
 
 section h3 {
@@ -214,7 +221,78 @@ section h3 {
     -webkit-transform: scale(1.2,1.2);
 }
 
+/**************/
+/*   FOOTER   */
+/**************/
 
+.footer {
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    bottom: -20px;
+    clear: both;
+    color: #191970;
+    font-family: Calibri Light, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    height: 30px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 35px;
+}
+
+footer {
+    background-color: #191970;
+    height: 200px;
+}
+
+footer section {
+    margin-left: 25px;
+}
+
+footer section:first-child {
+    width: 75%;
+}
+
+footer p {
+    bottom: -45px;
+    color: #00B0E0;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+footer p a {
+    color: #5F9EA0;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+footer section:nth-child(2) p {
+    background-color: #7FFFD4;
+    border-radius: 100%;
+    float: left;
+    height: 30px;
+    font-family: "socicon", sans-serif;
+    margin-right: 10px;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    position: relative;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    width: 30px;
+}
+
+footer section:nth-child(2) p a {
+    color: #191970;
+    left: 7.5px;
+    position: absolute;
+    top: 7.5px;
+}
+
+footer section:nth-child(2) p:hover {
+    background-color: #00B0E0;
+}
 
 @media screen and (min-width: 480px) {
     /************/
@@ -222,7 +300,7 @@ section h3 {
     /************/
 
     .form h3+p {
-        width: 33%;
+        width: 34%;
     }
 
     .form form {
@@ -240,6 +318,6 @@ section h3 {
     }
 
     .form+section {
-        width: 33%;
+        width: 40%;
     }
 }
