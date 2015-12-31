@@ -44,6 +44,8 @@ header h1 {
 header span {
     border-radius: 2px;
     font-family: Calibri Light, sans-serif;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
 }
 
 .home header span {
@@ -151,11 +153,11 @@ main {
     margin-left: 25px;
 }
 
-section {
+main section {
     float: left;
 }
 
-section h3 {
+main section h3 {
     color: #00B0E0;
     font-size: 25px;
     margin-bottom: 50px;
@@ -195,10 +197,12 @@ section h3 {
     height: 50px;
     margin-bottom: 10px;
     margin-right: 10px;
+    -moz-border-radius: 100%;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
     position: relative;
     transition: 0.2s;
+    -webkit-border-radius: 100%;
     -webkit-transition: 0.2s;
     width: 50px;
 }
@@ -236,25 +240,26 @@ section h3 {
     font-weight: bold;
     height: 30px;
     margin: auto;
+    -moz-border-radius: 2px;
     position: relative;
     text-align: center;
+    -webkit-border-radius: 2px;
     width: 35px;
 }
 
 footer {
     background-color: #191970;
-    height: 200px;
-}
-
-footer section {
-    margin-left: 25px;
+    height: 300px;
 }
 
 footer section:first-child {
-    width: 75%;
+    float: left;
+    margin-left: 25px;
+    min-height: 250px;
+    width: 40%;
 }
 
-footer p {
+footer section:first-child p {
     bottom: -45px;
     color: #00B0E0;
     font-weight: bold;
@@ -262,36 +267,99 @@ footer p {
     position: relative;
 }
 
-footer p a {
+footer section:first-child p a {
     color: #5F9EA0;
     font-size: 15px;
     text-decoration: none;
 }
 
-footer section:nth-child(2) p {
+footer section:nth-child(2) {
+    float: right;
+    margin-right: 40px;
+}
+
+footer section:nth-child(2)>ul li {
     background-color: #7FFFD4;
     border-radius: 100%;
-    float: left;
+    bottom: -45px;
+    float: right;
     height: 30px;
-    font-family: "socicon", sans-serif;
+    list-style: none;
+    margin-bottom: 10px;
     margin-right: 10px;
+    -moz-border-radius: 100%;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
     position: relative;
     transition: 0.2s;
+    -webkit-border-radius: 100%;
     -webkit-transition: 0.2s;
     width: 30px;
 }
 
-footer section:nth-child(2) p a {
-    color: #191970;
-    left: 7.5px;
-    position: absolute;
-    top: 7.5px;
+footer section:nth-child(2)>ul li:first-child, footer section:nth-child(2)>ul li:last-child {
+    display: none;
 }
 
-footer section:nth-child(2) p:hover {
+footer section:nth-child(2)>ul li a {
+    color: #191970;
+    font-family: "socicon", sans-serif;
+    font-size: 20px;
+    left: 5px;
+    position: absolute;
+    text-decoration: none;
+    top: 5px;
+}
+
+footer section:nth-child(2)>ul li:hover {
     background-color: #00B0E0;
+}
+
+footer .trapeze {
+    border-bottom: 50px solid #7FFFD4;
+    border-left: 50px solid rgba(0,0,0,0);
+    border-right: 50px solid rgba(0,0,0,0);
+    clear: both;
+    height: 0;
+    margin: auto;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    width: 175px;
+}
+
+footer .trapeze p {
+    bottom: -15px;
+    color: #191970;
+    position: relative;
+    text-align: center;
+}
+
+footer .pointe {
+    border-left: 25px solid rgba(0,0,0,0);
+    border-right: 25px solid rgba(0,0,0,0);
+    border-top: 15px solid #00FFFF;
+    margin: auto;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    width: 225px;
+}
+
+footer .trapeze:hover {
+    -ms-transform: translate(0px,-15px);
+    -moz-transform: translate(0px,-15px);
+    -webkit-transform: translate(0px,-15px);
+    transform: translate(0px,-15px);
+}
+
+footer .trapeze:hover+.pointe {
+    -ms-transform: translate(0px,-15px);
+    -moz-transform: translate(0px,-15px);
+    -webkit-transform: translate(0px,-15px);
+    transform: translate(0px,-15px);
 }
 
 @media screen and (min-width: 480px) {
@@ -305,6 +373,18 @@ footer section:nth-child(2) p:hover {
 
     .form form {
         width: 60%;
+    }
+
+    /**************/
+    /*   FOOTER   */
+    /**************/
+
+    footer {
+        height: 200px;
+    }
+
+    footer section:first-child {
+        min-height: 150px;
     }
 }
 
