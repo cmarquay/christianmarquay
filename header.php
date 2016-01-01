@@ -8,6 +8,7 @@
     <meta name="author" content="Christian MARQUAY"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="images/cm.png" />
+    <link rel="stylesheet" href="js/leaflet/leaflet.css" />
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
 <body class="site">

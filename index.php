@@ -8,6 +8,7 @@
         <meta name="author" content="Christian MARQUAY"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="images/cm.png" />
+        <link rel="stylesheet" href="js/leaflet/leaflet.css" />
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
     <body class="home">
@@ -28,7 +29,3 @@
 
     </main>
     <?php include_once("footer.php"); ?>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js" type="text/javascript"></script>
-        <script src="js/comportement.min.js" type="text/javascript"></script>
-    </body>
-</html>

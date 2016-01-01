@@ -250,6 +250,7 @@ main section h3 {
 footer {
     background-color: #191970;
     height: 300px;
+    overflow: hidden;
 }
 
 footer section:first-child {
@@ -315,7 +316,7 @@ footer section:nth-child(2)>ul li:hover {
     background-color: #00B0E0;
 }
 
-footer .trapeze {
+footer #trapeze {
     border-bottom: 50px solid #7FFFD4;
     border-left: 50px solid rgba(0,0,0,0);
     border-right: 50px solid rgba(0,0,0,0);
@@ -329,11 +330,15 @@ footer .trapeze {
     width: 175px;
 }
 
-footer .trapeze p {
+footer #trapeze p {
     bottom: -15px;
-    color: #191970;
     position: relative;
     text-align: center;
+}
+
+footer #trapeze p a {
+    color: #191970;
+    text-decoration: none;
 }
 
 footer .pointe {
@@ -348,19 +353,44 @@ footer .pointe {
     width: 225px;
 }
 
-footer .trapeze:hover {
+footer #trapeze:hover {
     -ms-transform: translate(0px,-15px);
     -moz-transform: translate(0px,-15px);
     -webkit-transform: translate(0px,-15px);
     transform: translate(0px,-15px);
 }
 
-footer .trapeze:hover+.pointe {
+footer #trapeze:hover+.pointe {
     -ms-transform: translate(0px,-15px);
     -moz-transform: translate(0px,-15px);
-    -webkit-transform: translate(0px,-15px);
     transform: translate(0px,-15px);
+    -webkit-transform: translate(0px,-15px);
 }
+
+footer section:nth-of-type(3) {
+    background-color: #7FFFD4;
+    height: 200px;
+}
+
+footer section:nth-of-type(3) p {
+    color: #191970;
+    text-align: center;
+}
+
+footer section:nth-of-type(3) p:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 75px;
+}
+
+footer #map {
+    height: 750px;
+}
+
+/**************/
+/*   TABLET   */
+/**************/
 
 @media screen and (min-width: 480px) {
     /************/
@@ -387,6 +417,10 @@ footer .trapeze:hover+.pointe {
         min-height: 150px;
     }
 }
+
+/***************/
+/*   DESKTOP   */
+/***************/
 
 @media screen and (min-width: 750px)  {
     /************/

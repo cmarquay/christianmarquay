@@ -11,6 +11,16 @@
             <li><a href="https://www.facebook.com/christian.marquay" target="_blank">b</a></li>
         </ul>
     </section>
-    <div class="trapeze"><p>En savoir plus ?</p></div>
+    <div id="trapeze"><p><a href="#trapeze">En savoir plus ?</a></p></div>
     <div class="pointe"></div>
+    <section>
+        <p>JE SUIS A L'UNIVERSITE DE LA ROCHELLE</p>
+        <p>N'hésitez pas à me dire "Bonjour."</p>
+    </section>
+    <div id="map"></div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js" type="text/javascript"></script>
+<script src="js/leaflet/leaflet.js" type="text/javascript"></script>
+<script src="js/comportement.min.js" type="text/javascript"></script>
+</body>
+</html>
