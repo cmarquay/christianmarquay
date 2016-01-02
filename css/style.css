@@ -229,7 +229,7 @@ main section h3 {
 /*   FOOTER   */
 /**************/
 
-.footer {
+#footer {
     background-color: #FFFFFF;
     border-radius: 2px;
     bottom: -20px;
@@ -327,30 +327,34 @@ footer #trapeze {
     -o-transition: 0.2s;
     transition: 0.2s;
     -webkit-transition: 0.2s;
-    width: 175px;
+    width: 176px;
 }
 
 footer #trapeze p {
-    bottom: -15px;
-    position: relative;
     text-align: center;
 }
 
 footer #trapeze p a {
     color: #191970;
+    display: block;
+    height: 50px;
+    padding-top: 15px;
     text-decoration: none;
+    width: 176px;
 }
 
 footer .pointe {
-    border-left: 25px solid rgba(0,0,0,0);
-    border-right: 25px solid rgba(0,0,0,0);
-    border-top: 15px solid #00FFFF;
+    border-left: 138px solid rgba(0,0,0,0);
+    border-right: 138px solid rgba(0,0,0,0);
+    border-top: 125px solid #00FFFF;
     margin: auto;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
+    position: relative;
     transition: 0.2s;
     -webkit-transition: 0.2s;
-    width: 225px;
+    width: 0;
+    z-index: 1;
 }
 
 footer #trapeze:hover {
@@ -369,12 +373,16 @@ footer #trapeze:hover+.pointe {
 
 footer section:nth-of-type(3) {
     background-color: #7FFFD4;
+    bottom: 110px;
     height: 200px;
+    position: relative;
 }
 
 footer section:nth-of-type(3) p {
     color: #191970;
+    position: relative;
     text-align: center;
+    z-index: 2;
 }
 
 footer section:nth-of-type(3) p:first-child {
@@ -385,7 +393,9 @@ footer section:nth-of-type(3) p:first-child {
 }
 
 footer #map {
+    bottom: 110px;
     height: 750px;
+    position: relative;
 }
 
 /**************/

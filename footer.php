@@ -1,4 +1,4 @@
-<div class="footer">CM</div>
+<div id="footer">CM</div>
 <footer>
     <section>
         <p>J'apprécie la création de sites web.</p>
@@ -11,7 +11,7 @@
             <li><a href="https://www.facebook.com/christian.marquay" target="_blank">b</a></li>
         </ul>
     </section>
-    <div id="trapeze"><p><a href="#trapeze">En savoir plus ?</a></p></div>
+    <div id="trapeze"><p><a href="#trapeze">En savoir plus</a></p></div>
     <div class="pointe"></div>
     <section>
         <p>JE SUIS A L'UNIVERSITE DE LA ROCHELLE</p>
