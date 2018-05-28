@@ -1,5 +1,5 @@
 <?php
-include_once("utile.php");
+include_once("utils.php");
 $titre = "Contact";
 $description = "Contacter Christian MARQUAY, par messagerie interposée, par les réseaux sociaux, ou par un autre site web.";
 $h2 = "Email et réseaux sociaux";
@@ -8,7 +8,7 @@ if (isset($_POST["send"])) {
     if (isset($_POST["nom"]) && isset($_POST["email"]) && isset($_POST["sujet"]) && isset($_POST["message"]) &&
         !empty($_POST["nom"]) && !empty($_POST["email"]) && !empty($_POST["sujet"]) && !empty($_POST["message"])) {
         $email = addslashes(htmlentities($_POST["email"]));
-        if (VerifierAdresseMail($email)) {
+        if (checkEmail($email)) {
             $nom = addslashes(htmlentities($_POST["nom"]));
             $headers = "MIME-Version: 1.0\r\n";
             $headers .= "Content-type: text/html; charset=iso-8859-1";
